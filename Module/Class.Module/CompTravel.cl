@@ -233,6 +233,7 @@ class CompTravel : Travel
         a.Name : varName;
         a.Class : varClass;
         a.Index : this.ParamVar.Count;
+        a.Pos : 0;
         a.Any : nodeVar;
 
         this.ListInfra.TableAdd(this.ParamVar, a.Name, a);
