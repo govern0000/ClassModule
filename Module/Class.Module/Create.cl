@@ -230,7 +230,7 @@ class Create : ClassCreate
         b : false;
 
         var Bool ba;
-        ba : (varBase = null);
+        ba : varBase = null;
         inf (ba)
         {
             this.Error(this.ErrorKind.BaseUndefine, nodeClass, varClass.Index);
