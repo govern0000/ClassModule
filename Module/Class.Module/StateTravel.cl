@@ -118,6 +118,7 @@ class StateTravel : Travel
         dataVar.Name : "data";
         dataVar.Class : varField.Class;
         dataVar.Index : this.StateVar.Count;
+        dataVar.Pos : 0;
 
         this.ListInfra.TableAdd(this.StateVar, dataVar.Name, dataVar);
 
@@ -158,6 +159,7 @@ class StateTravel : Travel
         dataVar.Name : "data";
         dataVar.Class : varField.Class;
         dataVar.Index : this.StateVar.Count;
+        dataVar.Pos : 0;
 
         this.ListInfra.TableAdd(this.StateVar, dataVar.Name, dataVar);
 
@@ -167,6 +169,7 @@ class StateTravel : Travel
         valueVar.Name : "value";
         valueVar.Class : varField.Class;
         valueVar.Index : this.StateVar.Count;
+        valueVar.Pos : 0;
 
         this.ListInfra.TableAdd(this.StateVar, valueVar.Name, valueVar);
 
