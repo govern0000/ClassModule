@@ -733,7 +733,7 @@ class Create : ClassCreate
         var Module ka;
 
         var Class entryClass;
-        
+
         inf (~b)
         {
             ka : this.ModuleGet("System.Entry");
@@ -746,7 +746,7 @@ class Create : ClassCreate
 
         inf (~b)
         {
-            entryClass = this.ModuleClassGet(ka, "Entry");
+            entryClass : this.ModuleClassGet(ka, "Entry");
 
             inf (entryClass = null)
             {
