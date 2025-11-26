@@ -6,17 +6,17 @@ public class PortGen : ToolBase
     {
         base.Init();
         this.SourceFileName = this.S("ToolData/Class/PortSource.txt");
-        this.SNewState = this.S("NewState");
         this.SNodeState = this.S("NodeState");
-        this.SCreateSetState = this.S("CreateSetState");
+        this.SNewState = this.S("NewState");
+        this.SSetState = this.S("SetState");
         return true;
     }
 
     public virtual Table ClassTable { get; set; }
     protected virtual String SourceFileName { get; set; }
-    protected virtual String SNewState { get; set; }
     protected virtual String SNodeState { get; set; }
-    protected virtual String SCreateSetState { get; set; }
+    protected virtual String SNewState { get; set; }
+    protected virtual String SSetState { get; set; }
 
     public virtual bool Execute()
     {
@@ -51,9 +51,9 @@ public class PortGen : ToolBase
             varClass = iter.Value as GenClass;
 
             this.Add(varClass.Name).AddLine();
-            this.Add(varClass.Name).Add(this.SNewState).AddLine();
             this.Add(varClass.Name).Add(this.SNodeState).AddLine();
-            this.Add(varClass.Name).Add(this.SCreateSetState).AddLine();
+            this.Add(varClass.Name).Add(this.SNewState).AddLine();
+            this.Add(varClass.Name).Add(this.SSetState).AddLine();
         }
 
         String a;
