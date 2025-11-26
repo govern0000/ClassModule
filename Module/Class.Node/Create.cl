@@ -181,7 +181,7 @@ class Create : ClassCreate
         return true;
     }
 
-    maide private RangeState RangeStateSet(var RangeState state)
+    maide precate RangeState RangeStateSet(var RangeState state)
     {
         state.Init();
         state.Create : this;
@@ -190,7 +190,7 @@ class Create : ClassCreate
         return state;
     }
 
-    maide private NodeState NodeStateSet(var NodeState state)
+    maide precate NodeState NodeStateSet(var NodeState state)
     {
         state.Init();
         state.Create : this;
@@ -203,13 +203,16 @@ class Create : ClassCreate
 
         var Int count;
         count : this.NodeKind.Count;
+
         var Int i;
         i : 0;
         while (i < count)
         {
             var NodeKind kind;
             kind : this.NodeKind.Get(i);
+
             this.AddNodeState(kind);
+
             i : i + 1;
         }
         return true;
