@@ -19,29 +19,29 @@ class CreateSetOperate : CreateOperate
         var CreateArg arg;
         arg : create.Arg;
 
-        var CreateSetArg ka;
-        ka : create.SetArg;
-
         var Int index;
         index : arg.NodeIndex;
 
         var Node node;
         node : cast Node(arg.NodeArray.Get(index));
 
-        var CreateSetState state;
-        state : ka.Kind.CreateSetState;
+        var SetStateArg stateArg;
+        stateArg : create.SetStateArg;
 
-        var CreateSetStateArg stateArg;
-        stateArg : cast CreateSetStateArg(state.Arg);
         stateArg.Node : node;
-        stateArg.Arg : ka;
+
+        var SetState state;
+        state : stateArg.Kind.SetState;
+
+        state.Arg : stateArg;
 
         state.Execute();
 
-        stateArg.Arg : null;
+        state.Arg : null;
+
         stateArg.Node : null;
 
-        create.NodeInfo(node, ka.Range);
+        create.NodeInfo(node, stateArg.Range);
 
         index : index + 1;
 
