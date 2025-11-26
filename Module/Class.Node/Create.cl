@@ -34,8 +34,7 @@ class Create : ClassCreate
         this.TokenJ : this.CreateToken();
         this.TokenK : this.CreateToken();
 
-        this.InitListItemState();
-        this.InitNodeState();
+        this.InitState();
         return true;
     }
 
@@ -166,6 +165,15 @@ class Create : ClassCreate
     field precate Token TokenI { get { return data; } set { data : value; } }
     field precate Token TokenJ { get { return data; } set { data : value; } }
     field precate Token TokenK { get { return data; } set { data : value; } }
+
+    maide precate Bool InitState()
+    {
+        this.InitNodeState();
+        this.InitNewState();
+        this.InitSetState();
+        this.InitListItemState();
+        return true;
+    }
 
     maide precate Bool InitListItemState()
     {
