@@ -2,13 +2,11 @@ class WhileExecuteCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var WhileExecute node;
-        node : cast WhileExecute(arg.Node);
+        node : cast WhileExecute(k.Node);
         node.Cond : cast Operate(k.Field00);
         node.Loop : cast State(k.Field01);
         return true;

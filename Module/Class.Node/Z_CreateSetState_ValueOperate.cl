@@ -2,13 +2,11 @@ class ValueOperateCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var ValueOperate node;
-        node : cast ValueOperate(arg.Node);
+        node : cast ValueOperate(k.Node);
         node.Value : cast Value(k.Field00);
         return true;
     }

@@ -2,13 +2,11 @@ class InfExecuteCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var InfExecute node;
-        node : cast InfExecute(arg.Node);
+        node : cast InfExecute(k.Node);
         node.Cond : cast Operate(k.Field00);
         node.Then : cast State(k.Field01);
         return true;

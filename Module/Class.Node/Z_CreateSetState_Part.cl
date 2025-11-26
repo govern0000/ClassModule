@@ -2,13 +2,11 @@ class PartCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var Part node;
-        node : cast Part(arg.Node);
+        node : cast Part(k.Node);
         node.Value : cast Array(k.Field00);
         return true;
     }

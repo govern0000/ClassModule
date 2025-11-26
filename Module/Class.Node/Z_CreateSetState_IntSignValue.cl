@@ -2,13 +2,11 @@ class IntSignValueCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var IntSignValue node;
-        node : cast IntSignValue(arg.Node);
+        node : cast IntSignValue(k.Node);
         node.Value : cast Int(k.Field00);
         return true;
     }

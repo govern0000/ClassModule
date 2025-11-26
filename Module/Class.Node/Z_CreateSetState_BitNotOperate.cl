@@ -2,13 +2,11 @@ class BitNotOperateCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var BitNotOperate node;
-        node : cast BitNotOperate(arg.Node);
+        node : cast BitNotOperate(k.Node);
         node.Value : cast Operate(k.Field00);
         return true;
     }

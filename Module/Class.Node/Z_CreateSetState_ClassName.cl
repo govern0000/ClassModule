@@ -2,13 +2,11 @@ class ClassNameCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var ClassName node;
-        node : cast ClassName(arg.Node);
+        node : cast ClassName(k.Node);
         node.Value : cast String(k.Field00);
         return true;
     }

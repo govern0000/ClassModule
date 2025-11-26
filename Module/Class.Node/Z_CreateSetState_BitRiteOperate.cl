@@ -2,13 +2,11 @@ class BitRiteOperateCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var BitRiteOperate node;
-        node : cast BitRiteOperate(arg.Node);
+        node : cast BitRiteOperate(k.Node);
         node.Value : cast Operate(k.Field00);
         node.Count : cast Operate(k.Field01);
         return true;

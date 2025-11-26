@@ -2,13 +2,11 @@ class IntHexValueCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var IntHexValue node;
-        node : cast IntHexValue(arg.Node);
+        node : cast IntHexValue(k.Node);
         node.Value : cast Int(k.Field00);
         return true;
     }

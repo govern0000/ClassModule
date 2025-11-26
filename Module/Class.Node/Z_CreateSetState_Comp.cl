@@ -2,13 +2,11 @@ class CompCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var Comp node;
-        node : cast Comp(arg.Node);
+        node : cast Comp(k.Node);
         return true;
     }
 }

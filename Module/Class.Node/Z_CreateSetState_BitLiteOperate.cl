@@ -2,13 +2,11 @@ class BitLiteOperateCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var BitLiteOperate node;
-        node : cast BitLiteOperate(arg.Node);
+        node : cast BitLiteOperate(k.Node);
         node.Value : cast Operate(k.Field00);
         node.Count : cast Operate(k.Field01);
         return true;

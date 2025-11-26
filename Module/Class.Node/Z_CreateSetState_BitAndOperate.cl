@@ -2,13 +2,11 @@ class BitAndOperateCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var BitAndOperate node;
-        node : cast BitAndOperate(arg.Node);
+        node : cast BitAndOperate(k.Node);
         node.Lite : cast Operate(k.Field00);
         node.Rite : cast Operate(k.Field01);
         return true;

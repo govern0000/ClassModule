@@ -2,13 +2,11 @@ class MarkCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var Mark node;
-        node : cast Mark(arg.Node);
+        node : cast Mark(k.Node);
         return true;
     }
 }

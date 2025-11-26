@@ -2,13 +2,11 @@ class PrusateCountCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var PrusateCount node;
-        node : cast PrusateCount(arg.Node);
+        node : cast PrusateCount(k.Node);
         return true;
     }
 }

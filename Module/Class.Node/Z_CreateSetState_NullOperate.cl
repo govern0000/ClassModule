@@ -2,13 +2,11 @@ class NullOperateCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var NullOperate node;
-        node : cast NullOperate(arg.Node);
+        node : cast NullOperate(k.Node);
         return true;
     }
 }

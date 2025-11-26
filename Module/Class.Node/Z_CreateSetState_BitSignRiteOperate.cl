@@ -2,13 +2,11 @@ class BitSignRiteOperateCreateSetState : CreateSetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetStateArg arg;
-        arg : cast CreateSetStateArg(this.Arg);
         var CreateSetArg k;
-        k : arg.Arg;
+        k : cast CreateSetArg(this.Arg);
 
         var BitSignRiteOperate node;
-        node : cast BitSignRiteOperate(arg.Node);
+        node : cast BitSignRiteOperate(k.Node);
         node.Value : cast Operate(k.Field00);
         node.Count : cast Operate(k.Field01);
         return true;
