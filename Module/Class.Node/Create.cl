@@ -352,11 +352,12 @@ class Create : ClassCreate
         return true;
     }
 
-    maide precate Bool SetArgClear()
+    maide precate Bool SetStateArgClear()
     {
-        var CreateSetArg a;
-        a : this.SetArg;
+        var SetStateArg a;
+        a : this.SetStateArg;
         a.Kind : null;
+        a.Node : null;
         a.Field00 : null;
         a.Field01 : null;
         a.Field02 : null;
