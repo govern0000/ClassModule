@@ -6,7 +6,7 @@ public class SetStateGen : ClassSetStateGen
     {
         base.Init();
         this.OutputFoldPath = this.S("../../Module/Class.Node");
-        this.SourceFileName = this.S("ToolData/Class/CreateSetStateSource.txt");
+        this.SourceFileName = this.S("ToolData/Class/SetStateSource.txt");
         return true;
     }
 
