@@ -1,9 +1,9 @@
-    maide precate #ItemClassName# AddItem(var String name, var Node node, var InfraState newState, var NodeState nodeState, var CreateSetState createSetState)
+    maide precate #ItemClassName# AddItem(var String name, var Node node, var NodeState nodeState, var NewState newState, var SetState setState)
     {
         node.Init();
-        newState.Init();
         nodeState.Init();
-        createSetState.Init();
+        newState.Init();
+        setState.Init();
 
         var #ItemClassName# item;
         item : new #ItemClassName#;
@@ -11,9 +11,9 @@
         item.Index : this.Index;
         item.Name : name;
         item.Node : node;
-        item.NewState : newState;
         item.NodeState : nodeState;
-        item.CreateSetState : createSetState;
+        item.NewState : newState;
+        item.SetState : setState;
         this.Array.Set(item.Index, item);
         this.Index : this.Index + 1;
         return item;
