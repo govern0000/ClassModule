@@ -1,6 +1,6 @@
 namespace Z.Tool.Class.NodeList;
 
-public class CreateSetStateGen : ClassCreateSetStateGen
+public class SetStateGen : ClassSetStateGen
 {
     public override bool Init()
     {
@@ -25,7 +25,7 @@ public class CreateSetStateGen : ClassCreateSetStateGen
 
         this.AddS("(")
         
-        .AddS("k").AddS(".");
+        .AddS("arg").AddS(".");
 
         this.AddArgFieldName(index, className);
 
@@ -37,7 +37,7 @@ public class CreateSetStateGen : ClassCreateSetStateGen
     protected override String OutputFilePath(String kind)
     {
         String fileName;
-        fileName = this.AddClear().AddS("Z_CreateSetState_").Add(kind).AddS(".cl").AddResult();
+        fileName = this.AddClear().AddS("Z_SetState_").Add(kind).AddS(".cl").AddResult();
 
         String filePath;
         filePath = this.AddClear().Add(this.OutputFoldPath).Add(this.TextInfra.PathCombine).Add(fileName).AddResult();
