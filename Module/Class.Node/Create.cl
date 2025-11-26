@@ -226,6 +226,44 @@ class Create : ClassCreate
         return true;
     }
 
+    maide precate Bool InitNewState()
+    {
+        var Int count;
+        count : this.NodeKind.Count;
+
+        var Int i;
+        i : 0;
+        while (i < count)
+        {
+            var NodeKind kind;
+            kind : this.NodeKind.Get(i);
+
+            kind.NewState.Create : this;
+
+            i : i + 1;
+        }
+        return true;
+    }
+
+    maide precate Bool InitSetState()
+    {
+        var Int count;
+        count : this.NodeKind.Count;
+
+        var Int i;
+        i : 0;
+        while (i < count)
+        {
+            var NodeKind kind;
+            kind : this.NodeKind.Get(i);
+
+            kind.SetState.Create : this;
+
+            i : i + 1;
+        }
+        return true;
+    }
+
     maide prusate Bool Execute()
     {
         this.Result : new Result;
