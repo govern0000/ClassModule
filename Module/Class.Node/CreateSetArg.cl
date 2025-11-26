@@ -1,5 +1,6 @@
 class CreateSetArg : Any
 {
+    field prusate Node Node { get { return data; } set { data : value; } }
     field prusate NodeKind Kind { get { return data; } set { data : value; } }
     field prusate Any Field00 { get { return data; } set { data : value; } }
     field prusate Any Field01 { get { return data; } set { data : value; } }
