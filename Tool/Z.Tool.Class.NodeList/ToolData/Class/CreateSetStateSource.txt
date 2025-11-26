@@ -1,12 +1,12 @@
-class #NodeKind#CreateSetState : CreateSetState
+class #NodeKind#SetState : SetState
 {
     maide prusate Bool Execute()
     {
-        var CreateSetArg k;
-        k : cast CreateSetArg(this.Arg);
+        var SetStateArg arg;
+        arg : cast SetStateArg(this.Arg);
 
         var #NodeKind# node;
-        node : cast #NodeKind#(k.Node);
+        node : cast #NodeKind#(arg.Node);
 #FieldSetList#        return true;
     }
 }
