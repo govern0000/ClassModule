@@ -14,7 +14,7 @@ class Create : ClassCreate
         this.CountOperate : this.CreateCountOperate();
         this.KindOperate : this.CreateKindOperate();
         this.SetOperate : this.CreateSetOperate();
-        this.SetArg : this.CreateSetArg();
+        this.SetStateArg : this.CreateSetStateArg();
         this.NameValid : this.CreateNameValid();
         this.ClassIntParse : this.CreateClassIntParse();
         this.StringWrite : this.CreateStringWrite();
@@ -66,10 +66,10 @@ class Create : ClassCreate
         return a;
     }
 
-    maide precate CreateSetArg CreateSetArg()
+    maide precate SetStateArg CreateSetStateArg()
     {
-        var CreateSetArg a;
-        a : new CreateSetArg;
+        var SetStateArg a;
+        a : new SetStateArg;
         a.Init();
         a.Range : new Range;
         a.Range.Init();
@@ -130,7 +130,7 @@ class Create : ClassCreate
     field prusate CreateCountOperate CountOperate { get { return data; } set { data : value; } }
     field prusate CreateKindOperate KindOperate { get { return data; } set { data : value; } }
     field prusate CreateSetOperate SetOperate { get { return data; } set { data : value; } }
-    field prusate CreateSetArg SetArg { get { return data; } set { data : value; } }
+    field prusate SetStateArg SetStateArg { get { return data; } set { data : value; } }
     field precate InfraInfra InfraInfra { get { return data; } set { data : value; } }
     field precate ListInfra ListInfra { get { return data; } set { data : value; } }
     field precate ClassInfra ClassInfra { get { return data; } set { data : value; } }
