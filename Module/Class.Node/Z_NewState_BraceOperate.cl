@@ -1,4 +1,4 @@
-class BraceOperateNewState : InfraState
+class BraceOperateNewState : NewState
 {
     maide prusate Bool Execute()
     {

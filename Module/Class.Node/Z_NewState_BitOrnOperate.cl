@@ -1,4 +1,4 @@
-class BitOrnOperateNewState : InfraState
+class BitOrnOperateNewState : NewState
 {
     maide prusate Bool Execute()
     {

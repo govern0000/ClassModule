@@ -1,4 +1,4 @@
-class PrecateCountNewState : InfraState
+class PrecateCountNewState : NewState
 {
     maide prusate Bool Execute()
     {

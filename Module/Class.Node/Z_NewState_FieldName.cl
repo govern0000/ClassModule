@@ -1,4 +1,4 @@
-class FieldNameNewState : InfraState
+class FieldNameNewState : NewState
 {
     maide prusate Bool Execute()
     {

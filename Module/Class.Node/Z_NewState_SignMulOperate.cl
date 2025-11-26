@@ -1,4 +1,4 @@
-class SignMulOperateNewState : InfraState
+class SignMulOperateNewState : NewState
 {
     maide prusate Bool Execute()
     {

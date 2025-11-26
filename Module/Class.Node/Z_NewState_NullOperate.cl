@@ -1,4 +1,4 @@
-class NullOperateNewState : InfraState
+class NullOperateNewState : NewState
 {
     maide prusate Bool Execute()
     {

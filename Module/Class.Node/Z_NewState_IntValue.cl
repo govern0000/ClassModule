@@ -1,4 +1,4 @@
-class IntValueNewState : InfraState
+class IntValueNewState : NewState
 {
     maide prusate Bool Execute()
     {

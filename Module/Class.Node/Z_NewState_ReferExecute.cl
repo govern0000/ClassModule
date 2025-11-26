@@ -1,4 +1,4 @@
-class ReferExecuteNewState : InfraState
+class ReferExecuteNewState : NewState
 {
     maide prusate Bool Execute()
     {

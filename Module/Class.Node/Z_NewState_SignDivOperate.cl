@@ -1,4 +1,4 @@
-class SignDivOperateNewState : InfraState
+class SignDivOperateNewState : NewState
 {
     maide prusate Bool Execute()
     {

@@ -1,4 +1,4 @@
-class IntSignValueNewState : InfraState
+class IntSignValueNewState : NewState
 {
     maide prusate Bool Execute()
     {

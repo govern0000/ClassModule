@@ -1,4 +1,4 @@
-class BitLiteOperateNewState : InfraState
+class BitLiteOperateNewState : NewState
 {
     maide prusate Bool Execute()
     {

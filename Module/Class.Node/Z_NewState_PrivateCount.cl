@@ -1,4 +1,4 @@
-class PrivateCountNewState : InfraState
+class PrivateCountNewState : NewState
 {
     maide prusate Bool Execute()
     {

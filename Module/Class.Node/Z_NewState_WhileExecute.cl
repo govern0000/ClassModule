@@ -1,4 +1,4 @@
-class WhileExecuteNewState : InfraState
+class WhileExecuteNewState : NewState
 {
     maide prusate Bool Execute()
     {
