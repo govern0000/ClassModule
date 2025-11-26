@@ -1,4 +1,4 @@
-class #NodeKind#NewState : InfraState
+class #NodeKind#NewState : NewState
 {
     maide prusate Bool Execute()
     {
