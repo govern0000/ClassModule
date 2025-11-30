@@ -33,8 +33,6 @@ class Create : ClassCreate
         this.TokenI : this.CreateToken();
         this.TokenJ : this.CreateToken();
         this.TokenK : this.CreateToken();
-
-        this.InitState();
         return true;
     }
 
@@ -166,7 +164,7 @@ class Create : ClassCreate
     field precate Token TokenJ { get { return data; } set { data : value; } }
     field precate Token TokenK { get { return data; } set { data : value; } }
 
-    maide precate Bool InitState()
+    maide prusate Bool StateSet()
     {
         this.InitNodeState();
         this.InitNewState();
@@ -280,6 +278,8 @@ class Create : ClassCreate
         var Array rootArray;
         rootArray : this.ListInfra.ArrayCreate(this.Code.Count);
         this.Result.Root : rootArray;
+
+        this.StateSet();
 
         this.NodeState : cast NodeState(this.NodeStateTable.Get(this.Task));
         inf (this.NodeState = null)
