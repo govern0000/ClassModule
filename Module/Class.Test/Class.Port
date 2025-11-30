@@ -27,7 +27,7 @@ Storage.Storage:0.00.00
     StorageInfra Infra
 Class.Infra:0.00.00
     ClassInfra Infra
-Class.Console:0.00.00
+Class.Class:0.00.00
     ClassConsole Console
     Task Task
     TaskKind TaskKind
