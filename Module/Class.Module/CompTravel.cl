@@ -98,6 +98,7 @@ class CompTravel : Travel
         a.Get : varGet;
         a.Set : varSet;
         a.Parent : this.ThisClass;
+        a.Index : this.ThisClass.Field.Count;
         a.Any : nodeField;
 
         this.ListInfra.TableAdd(this.ThisClass.Field, a.Name, a);
@@ -174,6 +175,7 @@ class CompTravel : Travel
         a.Param : this.ParamVar;
         a.Call : callVar;
         a.Parent : this.ThisClass;
+        a.Index : this.ThisClass.Maide.Count;
         a.Any : nodeMaide;
 
         this.ParamVar : null;
