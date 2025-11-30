@@ -1,5 +1,5 @@
 [Module]
-Class.Console:0.00.00
+Class.Class:0.00.00
 
 [Import]
 System.Infra
