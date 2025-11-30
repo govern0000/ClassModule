@@ -5,7 +5,7 @@ public class TravelInfoGen : ClassTravelInfoGen
     public override bool Init()
     {
         base.Init();
-        this.PathOutput = this.S("../../Module/Class.Console/InfoTravel.cl");
+        this.PathOutput = this.S("../../Module/Class.Class/InfoTravel.cl");
         this.PathSource = this.GetPathName(this.S("InfoSource.cl"));
         this.PathNode = this.GetPath(this.S("InfoNode"));
         this.PathDerive = this.GetPath(this.S("InfoDerive"));

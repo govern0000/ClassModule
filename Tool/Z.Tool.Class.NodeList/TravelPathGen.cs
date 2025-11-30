@@ -6,7 +6,7 @@ public class TravelPathGen : ClassTravelPathGen
     {
         base.Init();
 
-        this.PathOutput = this.S("../../Module/Class.Console/PathTravel.cl");
+        this.PathOutput = this.S("../../Module/Class.Class/PathTravel.cl");
 
         this.PathSource = this.GetPathName(this.S("PathSource.cl"));
         return true;

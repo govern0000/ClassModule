@@ -5,7 +5,7 @@ public class Gen : SourceGen
     public override bool Init()
     {
         base.Init();
-        this.Module = this.S("Class.Console");
+        this.Module = this.S("Class.Class");
         this.ClassName = this.S("TaskKindList");
         this.BaseClassName = this.S("Any");
         this.AnyClassName = this.S("Any");
@@ -14,7 +14,7 @@ public class Gen : SourceGen
         this.Export = true;
         this.ItemListFileName = this.S("../../../Class/Out/net8.0/ToolData/Saber/ItemListTaskKind.txt");
         this.AddMethodFileName = this.S("ToolData/Class/AddMaideTaskKind.txt");
-        this.OutputFilePath = this.S("../../Module/Class.Console/TaskKindList.cl");
+        this.OutputFilePath = this.S("../../Module/Class.Class/TaskKindList.cl");
         return true;
     }
 }
