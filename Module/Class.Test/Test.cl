@@ -72,7 +72,7 @@ class Test : TextAdd
 
     maide precate String DataRootFold()
     {
-        return "../../Saber/SaberTest/Test";
+        return "../../../Saber/SaberTest/Test";
     }
 
     maide precate Bool AddSeerList()
