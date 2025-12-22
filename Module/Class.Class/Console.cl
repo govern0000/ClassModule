@@ -241,7 +241,7 @@ class Console : TextAdd
             var Task task;
             task : new Task;
             task.Init();
-            task.Kind : this.TaskKind.Console;
+            task.Kind : this.TaskKind.Class;
             task.Source : sourceFold;
             task.ArgBool : systemModule;
             task.Node : "Class";
@@ -274,7 +274,7 @@ class Console : TextAdd
         kind : this.Task.Kind;
 
         var Bool b;
-        b : kind = kindList.Console | kind = kindList.Module;
+        b : kind = kindList.Class | kind = kindList.Module;
         var Bool ba;
         ba : kind = kindList.Token | kind = kindList.Node;
 
@@ -351,7 +351,7 @@ class Console : TextAdd
 
         this.ErrorString.SourceArray : this.Source;
 
-        inf (kind = kindList.Console)
+        inf (kind = kindList.Class)
         {
             inf (this.CanGen())
             {
@@ -375,7 +375,7 @@ class Console : TextAdd
             {
                 this.PrintTokenResult();
             }
-            inf (kind = kindList.Node | kind = kindList.Console)
+            inf (kind = kindList.Node | kind = kindList.Class)
             {
                 this.PrintNodeResult();
             }
@@ -627,7 +627,7 @@ class Console : TextAdd
         kind : this.Task.Kind;
 
         var Bool kindConsole;
-        kindConsole : kind = kindList.Console;
+        kindConsole : kind = kindList.Class;
 
         inf (kindConsole | kind = kindList.Token)
         {

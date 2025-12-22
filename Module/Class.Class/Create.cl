@@ -49,7 +49,7 @@ class Create : Any
         var TaskKind kind;
         kind : this.Console.Task.Kind;
 
-        inf (kind = kindList.Console |
+        inf (kind = kindList.Class |
             kind = kindList.Module |
             kind = kindList.Node |
             kind = kindList.Token
@@ -58,14 +58,14 @@ class Create : Any
             this.ExecuteToken();
         }
 
-        inf (kind = kindList.Console |
+        inf (kind = kindList.Class |
             kind = kindList.Module |
             kind = kindList.Node)
         {
             this.ExecuteNode();
         }
 
-        inf (kind = kindList.Console |
+        inf (kind = kindList.Class |
             kind = kindList.Module)
         {
             this.ExecuteModule();
