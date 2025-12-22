@@ -10,14 +10,14 @@ class TaskKindList : Any
         this.Token : this.AddItem();
         this.Node : this.AddItem();
         this.Module : this.AddItem();
-        this.Console : this.AddItem();
+        this.Class : this.AddItem();
         return true;
     }
 
     field prusate TaskKind Token { get { return data; } set { data : value; } }
     field prusate TaskKind Node { get { return data; } set { data : value; } }
     field prusate TaskKind Module { get { return data; } set { data : value; } }
-    field prusate TaskKind Console { get { return data; } set { data : value; } }
+    field prusate TaskKind Class { get { return data; } set { data : value; } }
 
     maide precate TaskKind AddItem()
     {
