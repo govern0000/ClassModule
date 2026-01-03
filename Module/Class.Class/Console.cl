@@ -157,6 +157,7 @@ class Console : TextAdd
     field prusate Table ModuleTable { get { return data; } set { data : value; } }
     field prusate Table ImportClass { get { return data; } set { data : value; } }
     field prusate Port Port { get { return data; } set { data : value; } }
+    field prusate Array PortError { get { return data; } set { data : value; } }
     field prusate Bool ErrorWrite { get { return data; } set { data : value; } }
     field precate ListInfra ListInfra { get { return data; } set { data : value; } }
     field precate StorageInfra StorageInfra { get { return data; } set { data : value; } }
@@ -176,7 +177,6 @@ class Console : TextAdd
     field precate Out Out { get { return data; } set { data : value; } }
     field precate Out Err { get { return data; } set { data : value; } }
     field precate String ClassPath { get { return data; } set { data : value; } }
-    field precate Array PortError { get { return data; } set { data : value; } }
     field precate Bool MakeSystem { get { return data; } set { data : value; } }
     field precate ModuleRefLess ModuleRefLess { get { return data; } set { data : value; } }
     field precate TextLess StorageNameLess { get { return data; } set { data : value; } }
