@@ -159,21 +159,21 @@ class Console : TextAdd
     field prusate Port Port { get { return data; } set { data : value; } }
     field prusate Array PortError { get { return data; } set { data : value; } }
     field prusate Bool ErrorWrite { get { return data; } set { data : value; } }
+    field prusate BinaryRead BinaryRead { get { return data; } set { data : value; } }
+    field prusate BinaryWrite BinaryWrite { get { return data; } set { data : value; } }
+    field prusate ModulePort ModulePort { get { return data; } set { data : value; } }
+    field prusate PortRead PortRead { get { return data; } set { data : value; } }
+    field prusate PortLoad PortLoad { get { return data; } set { data : value; } }
+    field prusate BinaryGen BinaryGen { get { return data; } set { data : value; } }
+    field prusate StorageGen StorageGen { get { return data; } set { data : value; } }
+    field prusate ErrorString ErrorString { get { return data; } set { data : value; } }
+    field prusate NameValid NameValid { get { return data; } set { data : value; } }
+    field prusate InfoToken InfoToken { get { return data; } set { data : value; } }
+    field prusate InfoTravel InfoTravel { get { return data; } set { data : value; } }
     field precate ListInfra ListInfra { get { return data; } set { data : value; } }
     field precate StorageInfra StorageInfra { get { return data; } set { data : value; } }
     field precate ClassInfra ClassInfra { get { return data; } set { data : value; } }
     field precate StorageComp StorageComp { get { return data; } set { data : value; } }
-    field precate BinaryRead BinaryRead { get { return data; } set { data : value; } }
-    field precate BinaryWrite BinaryWrite { get { return data; } set { data : value; } }
-    field precate ModulePort ModulePort { get { return data; } set { data : value; } }
-    field precate PortRead PortRead { get { return data; } set { data : value; } }
-    field precate PortLoad PortLoad { get { return data; } set { data : value; } }
-    field precate BinaryGen BinaryGen { get { return data; } set { data : value; } }
-    field precate StorageGen StorageGen { get { return data; } set { data : value; } }
-    field precate ErrorString ErrorString { get { return data; } set { data : value; } }
-    field precate NameValid NameValid { get { return data; } set { data : value; } }
-    field precate InfoToken InfoToken { get { return data; } set { data : value; } }
-    field precate InfoTravel InfoTravel { get { return data; } set { data : value; } }
     field precate Out Out { get { return data; } set { data : value; } }
     field precate Out Err { get { return data; } set { data : value; } }
     field precate String ClassPath { get { return data; } set { data : value; } }
