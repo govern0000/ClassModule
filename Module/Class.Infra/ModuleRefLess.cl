@@ -24,6 +24,13 @@ class ModuleRefLess : Less
         riteA : cast ModuleRef(rite);
 
         var Int k;
+        k : this.StringLess.Execute(liteA.Account, riteA.Account);
+
+        inf (~(k = 0))
+        {
+            return k;
+        }
+
         k : this.StringLess.Execute(liteA.Name, riteA.Name);
 
         inf (~(k = 0))
