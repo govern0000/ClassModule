@@ -96,9 +96,6 @@ class NameValid : TextAdd
 
     maide prusate Bool ModuleName(var Text text)
     {
-        var TextInfra textInfra;
-        textInfra : this.TextInfra;
-
         var Less less;
         less : this.TLess;
 
@@ -119,7 +116,7 @@ class NameValid : TextAdd
         b : false;
 
         var Int kk;
-        kk : textInfra.Index(text, dot, less);
+        kk : this.TextInfra.Index(text, dot, less);
 
         var Int index;
         var Int count;
@@ -143,7 +140,7 @@ class NameValid : TextAdd
                 range.Index : index;
                 range.Count : count;
 
-                kk : textInfra.Index(text, dot, less);
+                kk : this.TextInfra.Index(text, dot, less);
             }
         }
 
