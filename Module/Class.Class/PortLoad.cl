@@ -235,6 +235,8 @@ class PortLoad : TextAdd
 
     maide precate Bool ValidModuleRef(var ModuleRef module)
     {
+        var String account;
+        account : module.Account;
         var String name;
         name : module.Name;
         var Int ver;
@@ -248,15 +250,21 @@ class PortLoad : TextAdd
 
         inf (~this.SystemModule)
         {
-            inf (ver = null)
+            inf (account = null)
             {
                 this.Status : 2;
                 return false;
             }
 
-            inf (this.BuiltModuleRef(module))
+            inf (ver = null)
             {
                 this.Status : 3;
+                return false;
+            }
+
+            inf (this.BuiltModuleRef(module))
+            {
+                this.Status : 4;
                 return false;
             }
         }
