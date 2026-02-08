@@ -89,6 +89,11 @@ class NameValid : TextAdd
         return a;
     }
 
+    maide prusate Bool ModuleAccount(var Text text)
+    {
+        return this.NamePart(text);
+    }
+
     maide prusate Bool ModuleName(var Text text)
     {
         var TextInfra textInfra;
