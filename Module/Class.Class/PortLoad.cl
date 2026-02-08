@@ -318,11 +318,20 @@ class PortLoad : TextAdd
             return false;
         }
 
+        inf (~(account = null))
+        {
+            inf (~this.NameValid.ModuleAccount(this.TA(account)))
+            {
+                return false;
+            }
+        }
+
         var Bool built;
         built : this.BuiltModuleRef(moduleRef);
 
         var Bool b;
-        b : ver = null;
+        b : account = null;
+        b : b & (ver = null);
 
         var Bool a;
         a : built = b;
