@@ -341,7 +341,7 @@ class Read : Any
         while (i < count)
         {
             var ModuleRef k;
-            k : this.ClassInfra.ModuleRefCreate(null, null);
+            k : this.ClassInfra.ModuleRefCreate(null, null, null);
 
             array.Set(i, k);
 
