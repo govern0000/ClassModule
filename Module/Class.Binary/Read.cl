@@ -1005,6 +1005,13 @@ class Read : Any
 
     maide precate ModuleRef ExecuteModuleRef()
     {
+        var String account;
+        account : this.ExecuteName();
+        inf (account = null)
+        {
+            return null;
+        }
+
         var String name;
         name : this.ExecuteName();
         inf (name = null)
@@ -1021,6 +1028,7 @@ class Read : Any
 
         var ModuleRef a;
         a : this.Operate.ExecuteModuleRef();
+        a.Account : account;
         a.Name : name;
         a.Ver : ver;
         return a;
