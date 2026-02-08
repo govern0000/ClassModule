@@ -135,7 +135,7 @@ class Create : ClassCreate
         }
         inf (~this.SystemInfra)
         {
-            k : this.ModuleGet("System.Infra");
+            k : this.ModuleGet("System", "System.Infra");
         }
 
         this.System.Any : this.ModuleClassGet(k, "Any");
@@ -745,7 +745,7 @@ class Create : ClassCreate
 
         inf (~b)
         {
-            ka : this.ModuleGet("System.Entry");
+            ka : this.ModuleGet("System", "System.Entry");
 
             inf (ka = null)
             {
