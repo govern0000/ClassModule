@@ -99,11 +99,12 @@ class Infra : Any
         return a;
     }
 
-    maide prusate ModuleRef ModuleRefCreate(var String name, var Int ver)
+    maide prusate ModuleRef ModuleRefCreate(var String account, var String name, var Int ver)
     {
         var ModuleRef a;
         a : new ModuleRef;
         a.Init();
+        a.Account : account;
         a.Name : name;
         a.Ver : ver;
         return a;
