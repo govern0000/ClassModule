@@ -248,23 +248,32 @@ class PortLoad : TextAdd
             return false;
         }
 
-        inf (~this.SystemModule)
+        inf (~(account = null))
         {
-            inf (account = null)
+            inf (~this.NameValid.ModuleAccount(this.TA(account)))
             {
                 this.Status : 2;
                 return false;
             }
+        }
 
-            inf (ver = null)
+        inf (~this.SystemModule)
+        {
+            inf (account = null)
             {
                 this.Status : 3;
                 return false;
             }
 
-            inf (this.BuiltModuleRef(module))
+            inf (ver = null)
             {
                 this.Status : 4;
+                return false;
+            }
+
+            inf (this.BuiltModuleRef(module))
+            {
+                this.Status : 5;
                 return false;
             }
         }
@@ -297,6 +306,8 @@ class PortLoad : TextAdd
 
     maide precate Bool ValidImportModuleRefOne(var ModuleRef moduleRef)
     {
+        var String account;
+        account : moduleRef.Account;
         var String name;
         name : moduleRef.Name;
         var Int ver;
