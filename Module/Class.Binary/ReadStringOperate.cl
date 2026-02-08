@@ -89,7 +89,7 @@ class ReadStringOperate : ReadOperate
 
     maide precate ModuleRef CreateModuleRef()
     {
-        return this.ClassInfra.ModuleRefCreate(null, null);
+        return this.ClassInfra.ModuleRefCreate(null, null, null);
     }
 
     maide precate String CreateString()
