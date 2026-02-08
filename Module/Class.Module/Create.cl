@@ -161,7 +161,15 @@ class Create : ClassCreate
 
     maide precate Bool ModuleSystemInfra()
     {
-        return this.TextSame(this.TA(this.Module.Ref.Name), this.TB("System.Infra"));
+        var Bool ba;
+        ba : this.TextSame(this.TA(this.Module.Ref.Account), this.TB("System"));
+
+        var Bool bb;
+        bb : this.TextSame(this.TA(this.Module.Ref.Name), this.TB("System.Infra"));
+
+        var Bool b;
+        b : ba & bb;
+        return b;
     }
 
     maide precate Bool ExecuteInit()
