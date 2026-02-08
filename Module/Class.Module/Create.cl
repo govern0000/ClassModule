@@ -145,9 +145,10 @@ class Create : ClassCreate
         return true;
     }
 
-    maide precate Module ModuleGet(var String moduleName)
+    maide precate Module ModuleGet(var String account, var String name)
     {
-        this.ModuleRef.Name : moduleName;
+        this.ModuleRef.Account : account;
+        this.ModuleRef.Name : name;
 
         var Module a;
         a : cast Module(this.ModuleTable.Get(this.ModuleRef));
