@@ -1040,7 +1040,7 @@ class Read : TextAdd
 
         var ModuleRef a;
         a : this.Operate.ExecuteModuleRef();
-        a.Account = account;
+        a.Account : account;
         a.Name : name;
         a.Ver : ver;
         return a;
