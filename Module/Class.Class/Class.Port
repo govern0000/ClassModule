@@ -1,5 +1,5 @@
 [Module]
-Class.Class:0.00.00
+Alan:Class.Class:0.00.00
 
 [Import]
 System.Infra
@@ -30,14 +30,14 @@ System.Console
     Out Out
 System.Entry
     EntryEntry Entry
-Text.Text:0.00.00
+Alan:Text.Text:0.00.00
     TextAdd Add
-Storage.Storage:0.00.00
+Alan:Storage.Storage:0.00.00
     StorageComp Comp
     StorageEntry Entry
     StorageNameForm NameForm
     StorageInfra Infra
-Class.Infra:0.00.00
+Alan:Class.Infra:0.00.00
     Class Class
     Field Field
     Maide Maide
@@ -55,7 +55,7 @@ Class.Infra:0.00.00
     NameValid NameValid
     StoragePathValid StoragePathValid
     ClassInfra Infra
-Class.Binary:0.00.00
+Alan:Class.Binary:0.00.00
     Binary Binary
     BinaryClass Class
     BinaryImport Import
@@ -69,20 +69,20 @@ Class.Binary:0.00.00
     BinaryOperateKindList OperateKindList
     BinaryRead Read
     BinaryWrite Write
-Class.Port:0.00.00
+Alan:Class.Port:0.00.00
     Port Port
     PortImport Import
     PortImportClass ImportClass
     PortExport Export
     PortStorage Storage
     PortRead Read
-Class.Token:0.00.00
+Alan:Class.Token:0.00.00
     TokenCreate Create
     TokenResult Result
     Code Code
     Token Token
     Comment Comment
-Class.Node:0.00.00
+Alan:Class.Node:0.00.00
     NodeCreate Create
     NodeResult Result
     Travel Travel
@@ -152,7 +152,7 @@ Class.Node:0.00.00
     IntHexSignValue IntHexSignValue
     StringValue StringValue
     Node Node
-Class.Module:0.00.00
+Alan:Class.Module:0.00.00
     ModuleCreate Create
     ModuleResult Result
     Info Info
