@@ -1,5 +1,5 @@
 [Module]
-Class.Test:0.00.00
+Alan:Class.Test:0.00.00
 
 [Import]
 System.Infra
@@ -19,15 +19,15 @@ System.Console
     StringOut StringOut
 System.Entry
     EntryEntry Entry
-Text.Text:0.00.00
+Alan:Text.Text:0.00.00
     TextAdd Add
-Storage.Storage:0.00.00
+Alan:Storage.Storage:0.00.00
     StorageComp Comp
     StorageEntry Entry
     StorageInfra Infra
-Class.Infra:0.00.00
+Alan:Class.Infra:0.00.00
     ClassInfra Infra
-Class.Class:0.00.00
+Alan:Class.Class:0.00.00
     ClassConsole Console
     Task Task
     TaskKind TaskKind
