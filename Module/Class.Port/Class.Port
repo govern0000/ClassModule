@@ -1,5 +1,5 @@
 [Module]
-Class.Port:0.00.00
+Alan:Class.Port:0.00.00
 
 [Import]
 System.Infra
@@ -18,9 +18,9 @@ System.Text
     IntParse IntParse
     StringData StringData
     TextInfra Infra
-Text.Text:0.00.00
+Alan:Text.Text:0.00.00
     TextAdd Add
-Class.Infra:0.00.00
+Alan:Class.Infra:0.00.00
     ModuleRef ModuleRef
     ClassInfra Infra
 
