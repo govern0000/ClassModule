@@ -38,7 +38,7 @@ class ReadCountOperate : ReadOperate
 
     maide precate ModuleRef CreateModuleRef()
     {
-        return this.ClassInfra.ModuleRefCreate(null, 0);
+        return this.ClassInfra.ModuleRefCreate(null, null, 0);
     }
 
     maide precate Import CreateImport()
