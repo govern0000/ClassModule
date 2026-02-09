@@ -952,6 +952,7 @@ class Read : TextAdd
         var Range range;
         range : text.Range;
 
+        var Int accountCount;
         var Int nameCount;
         var Int ver;
 
@@ -959,15 +960,17 @@ class Read : TextAdd
         kk : this.TextIndex(text, this.TA(":"));
 
         var Bool b;
-        b : (kk = null);
+        b : kk = null;
+
         inf (b)
         {
+            accountCount : null;
             nameCount : range.Count;
             ver : null;
         }
         inf (~b)
         {
-            nameCount : kk;
+            accountCount : kk;
 
             var Int ka;
             var Int kb;
@@ -979,6 +982,25 @@ class Read : TextAdd
 
             range.Index : ka + kd;
             range.Count : kb - kd;
+
+            var Int kka;
+            kka : this.TextIndex(text, this.TA(":"));
+
+            range.Index : ka;
+            range.Count : kb;
+
+            inf (kka = null)
+            {
+                return null;
+            }
+
+            nameCount : kka;
+
+            var Int kda;
+            kda : kka + 1;
+
+            range.Index : (ka + kd) + kda;
+            range.Count : (kb - kd) - kda;
 
             ver : this.ExecuteModuleVer(text);
 
@@ -993,14 +1015,32 @@ class Read : TextAdd
 
         var Range rangeA;
         rangeA : this.TRangeA;
-        rangeA.Index : range.Index;
-        rangeA.Count : nameCount;
+
+        var String account;
+
+        inf (b)
+        {
+            rangeA.Index : range.Index;
+            rangeA.Count : nameCount;
+        }
+
+        inf (~b)
+        {
+            rangeA.Index : range.Index;
+            rangeA.Count : accountCount;
+
+            account : this.ExecuteString(row, rangeA);
+
+            rangeA.Index : range.Index + accountCount + 1;
+            rangeA.Count : nameCount;
+        }
 
         var String name;
         name : this.ExecuteString(row, rangeA);
 
         var ModuleRef a;
         a : this.Operate.ExecuteModuleRef();
+        a.Account = account;
         a.Name : name;
         a.Ver : ver;
         return a;
