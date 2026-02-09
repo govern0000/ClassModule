@@ -1,10 +1,6 @@
 @echo off
 
-set ModuleFold=..\Class\Out\Class\Module
-
-set InfraFold=C:\Users\aaabb\Package\Class\Out\Class\Infra
-
-pushd %ModuleFold%
-set "PATH=%InfraFold%;%PATH%" & set "QT_PLUGIN_PATH=%InfraFold%" & ..\Library\Class.Test-0.00.00
+pushd ..\Class\Out\Class\Module
+..\Library\Alan-Class.Test-0.00.00 "-" "-"
 echo Status: %errorlevel%
 popd
