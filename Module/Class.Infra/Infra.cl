@@ -618,7 +618,13 @@ class Infra : Any
 
     maide prusate String ClassModulePath(var String classPath)
     {
-        return classPath;
+        var StringAdd k;
+        k : new StringAdd;
+        k.Init();
+
+        var String a;
+        a : this.AddClear(k).Add(k, classPath).Add(k, this.TextInfra.PathCombine).Add(k, "Module").AddResult(k);
+        return a;
     }
 
     maide private Infra Add(var StringAdd k, var String a)
