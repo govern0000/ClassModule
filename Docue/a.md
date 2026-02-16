@@ -33,3 +33,7 @@ Class is most gain class module list.
 Class is park compile module list.
 
 Class is park class module list.
+
+Class is form specific.
+
+Class is not domain specific.
