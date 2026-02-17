@@ -30,10 +30,11 @@ System.Text
     StringData StringData
     StringLess StringLess
     TextInfra Infra
-System.Storage
-    StorageInfra Infra
 Alan:Text.Text:0.00.00
     TextAdd Add
+Alan:Storage.Storage:0.00.00
+    StorageComp Comp
+    StorageInfra Infra
 
 [Export]
 Class
