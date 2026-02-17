@@ -7,21 +7,10 @@ class Entry : EntryEntry
         console.Init();
 
         var Bool b;
-        b : console.Load();
-
-        inf (~b)
-        {
-            return 600;
-        }
-
+        b : console.ArgSet(this.Arg);
         inf (b)
         {
-            var Bool ba;
-            ba : console.ArgSet(this.Arg);
-            inf (ba)
-            {
-                console.Execute();
-            }
+            console.Execute();
         }
 
         var Int a;
