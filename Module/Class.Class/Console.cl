@@ -182,6 +182,13 @@ class Console : TextAdd
 
     maide prusate Bool Load()
     {
+        this.ClassPath : this.StorageInfra.TextRead("Alan-Class.Class-0.00.00/Data/ClassPath.txt");
+
+        inf (this.ClassPath = null)
+        {
+            return false;
+        }
+
         return true;
     }
 
