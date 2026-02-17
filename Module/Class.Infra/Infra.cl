@@ -5,6 +5,7 @@ class Infra : Any
         base.Init();
         this.InfraInfra : share InfraInfra;
         this.TextInfra : share TextInfra;
+        this.StorageComp : share StorageComp;
         this.CountList : share CountList;
 
         this.TextNewLine : "\n";
@@ -46,6 +47,7 @@ class Infra : Any
     field prusate Int IntSignNegateMax { get { return data; } set { data : value; } }
     field precate InfraInfra InfraInfra { get { return data; } set { data : value; } }
     field precate TextInfra TextInfra { get { return data; } set { data : value; } }
+    field precate StorageComp StorageComp { get { return data; } set { data : value; } }
     field precate CountList CountList { get { return data; } set { data : value; } }
 
     maide prusate Bool IndexRange(var Range range, var Int index)
@@ -618,6 +620,8 @@ class Infra : Any
 
     maide prusate String ClassModulePath(var String classPath)
     {
+        
+        
         return classPath;
     }
 
