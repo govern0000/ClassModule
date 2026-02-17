@@ -11,7 +11,6 @@ class Console : TextAdd
 
         this.Status : 0;
         this.ErrorWrite : true;
-        this.ClassPath : this.StorageComp.ModuleFoldPath;
         this.Create : this.CreateCreate();
         this.PortRead : this.CreatePortRead();
         this.BinaryRead : this.CreateBinaryRead();
