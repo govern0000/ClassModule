@@ -196,29 +196,29 @@ class Console : TextAdd
     {
         this.Arg : arg;
 
-        var Bool bba;
-        bba : 1 < arg.Count;
-        inf (~bba)
+        var Bool baa;
+        baa : 0 < arg.Count;
+        inf (~baa)
         {
             return false;
         }
-        var String aba;
-        aba : cast String(arg.Get(1));
+        var String aaa;
+        aaa : cast String(arg.Get(0));
 
-        var String abb;
-        inf (2 < arg.Count)
+        var String aab;
+        inf (1 < arg.Count)
         {
-            abb : cast String(arg.Get(2));
+            aab : cast String(arg.Get(1));
         }
 
         var String sourceFold;
-        sourceFold : aba;
+        sourceFold : aaa;
 
         var Bool systemModule;
         systemModule : false;
-        inf (~(abb = null))
+        inf (~(aab = null))
         {
-            inf (this.TextSame(this.TA(abb), this.TB("-m")))
+            inf (this.TextSame(this.TA(aab), this.TB("-m")))
             {
                 systemModule : true;
             }
