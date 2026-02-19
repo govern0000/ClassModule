@@ -1,4 +1,4 @@
-class Entry : EntryEntry
+class Make : EntryEntry
 {
     maide precate Int ExecuteMain()
     {
