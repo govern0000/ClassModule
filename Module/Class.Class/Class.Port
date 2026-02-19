@@ -159,7 +159,7 @@ Alan:Class.Module:0.00.00
     ErrorKindList ErrorKindList
 
 [Export]
-Entry
+Make
 Console
 Create
 Result
@@ -189,4 +189,4 @@ ErrorString
 [Storage]
 
 [Entry]
-Entry
+Make
