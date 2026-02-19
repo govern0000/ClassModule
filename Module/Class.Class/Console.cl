@@ -224,9 +224,9 @@ class Console : TextAdd
             }
         }
 
-        var ConsoleConsole oo;
-        oo : new ConsoleConsole;
-        oo.Init();
+        var ConsoleConsole console;
+        console : new ConsoleConsole;
+        console.Init();
 
         var Task task;
         task : new Task;
@@ -235,8 +235,8 @@ class Console : TextAdd
         task.Source : sourceFold;
         task.ArgBool : systemModule;
         task.Node : "Class";
-        task.Out : oo.Out;
-        task.Err : oo.Err;
+        task.Out : console.Out;
+        task.Err : console.Err;
 
         this.Task : task;
 
