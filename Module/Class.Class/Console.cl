@@ -196,69 +196,51 @@ class Console : TextAdd
     {
         this.Arg : arg;
 
-        var String aa;
-        var Bool b;
-        b : 0 < arg.Count;
-        inf (~b)
+        var Bool bba;
+        bba : 1 < arg.Count;
+        inf (~bba)
         {
             return false;
         }
-        inf (b)
+        var String aba;
+        aba : cast String(arg.Get(1));
+
+        var String abb;
+        inf (2 < arg.Count)
         {
-            aa : cast String(arg.Get(0));
+            abb : cast String(arg.Get(2));
         }
 
-        var Bool bb;
-        bb : this.TextSame(this.TA(aa), this.TB("make"));
-        inf (bb)
+        var String sourceFold;
+        sourceFold : aba;
+
+        var Bool systemModule;
+        systemModule : false;
+        inf (~(abb = null))
         {
-            var Bool bba;
-            bba : 1 < arg.Count;
-            inf (~bba)
+            inf (this.TextSame(this.TA(abb), this.TB("-m")))
             {
-                return false;
+                systemModule : true;
             }
-            var String aba;
-            aba : cast String(arg.Get(1));
-
-            var String abb;
-            inf (2 < arg.Count)
-            {
-                abb : cast String(arg.Get(2));
-            }
-
-            var String sourceFold;
-            sourceFold : aba;
-
-            var Bool systemModule;
-            systemModule : false;
-            inf (~(abb = null))
-            {
-                inf (this.TextSame(this.TA(abb), this.TB("-m")))
-                {
-                    systemModule : true;
-                }
-            }
-
-            var ConsoleConsole oo;
-            oo : new ConsoleConsole;
-            oo.Init();
-
-            var Task task;
-            task : new Task;
-            task.Init();
-            task.Kind : this.TaskKind.Class;
-            task.Source : sourceFold;
-            task.ArgBool : systemModule;
-            task.Node : "Class";
-            task.Out : oo.Out;
-            task.Err : oo.Err;
-
-            this.Task : task;
-
-            return true;
         }
-        return false;
+
+        var ConsoleConsole oo;
+        oo : new ConsoleConsole;
+        oo.Init();
+
+        var Task task;
+        task : new Task;
+        task.Init();
+        task.Kind : this.TaskKind.Class;
+        task.Source : sourceFold;
+        task.ArgBool : systemModule;
+        task.Node : "Class";
+        task.Out : oo.Out;
+        task.Err : oo.Err;
+
+        this.Task : task;
+
+        return true;
     }
 
     maide prusate Bool Execute()
