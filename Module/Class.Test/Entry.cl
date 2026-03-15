@@ -1,6 +1,6 @@
 class Entry : EntryEntry
 {
-    maide precate Int ExecuteMain()
+    maide precate Int Main()
     {
         var Test k;
         k : new Test;
