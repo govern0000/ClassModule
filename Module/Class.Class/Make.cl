@@ -1,6 +1,6 @@
 class Make : EntryEntry
 {
-    maide precate Int ExecuteMain()
+    maide precate Int Main()
     {
         var Console console;
         console : new Console;
