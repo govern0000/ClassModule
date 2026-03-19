@@ -1,5 +1,5 @@
 [Module]
-Class.Node:0.00.00
+Alan:Class.Node:0.00.00
 
 [Import]
 System.Infra
@@ -21,9 +21,9 @@ System.Text
     Text Text
     StringComp StringComp
     TextInfra Infra
-Text.Text:0.00.00
+Alan:Text.Text:0.00.00
     TextAdd Add
-Class.Infra:0.00.00
+Alan:Class.Infra:0.00.00
     ClassCreate Create
     Source Source
     Range Range
@@ -38,7 +38,7 @@ Class.Infra:0.00.00
     StringWrite StringWrite
     StringWriteArg StringWriteArg
     ClassInfra Infra
-Class.Token:0.00.00
+Alan:Class.Token:0.00.00
     TokenToken Token
     Code Code
 
