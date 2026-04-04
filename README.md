@@ -2,6 +2,8 @@
 
 Class Compiler Module List is written in Class Lang.
 
+This compiler is finish developed.
+
 The compiler reuse the Class directory, that is created in the Out directory when
 users build the Class Lang source code in Class Lang repo, including the "Script/System/Make.cmd" script in the repo
 
