@@ -152,8 +152,8 @@ class ErrorString : TextAdd
     {
         var String row;
         var String col;
-        row : this.StringInt(pos.Row);
-        col : this.StringInt(pos.Col);
+        row : this.StringInt(this.FormRow(pos.Row));
+        col : this.StringInt(this.FormCol(pos.Col));
 
         this.Add("(");
         this.Add("Row");
@@ -167,6 +167,16 @@ class ErrorString : TextAdd
         this.Add(")");
 
         return true;
+    }
+
+    maide precate Int FormRow(var Int row)
+    {
+        return row + 1;
+    }
+
+    maide precate Int FormCol(var Int col)
+    {
+        return col + 1;
     }
 
     maide precate Bool PosRange(var Pos resultStart, var Pos resultEnd, var Range range, var Array tokenArray)
